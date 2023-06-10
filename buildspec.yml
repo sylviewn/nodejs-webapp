@@ -11,7 +11,6 @@ phases:
       - source ~/.bashrc
       - echo 'Check kubectl version'
       - kubectl version --short --client
-      - sudo systemctl restart docker
     
   pre_build:
     commands:
