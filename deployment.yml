@@ -15,7 +15,7 @@ spec:
         app: nodesy-app
     spec:
       containers:
-        - name: nodesy-container
+      - name: nodesy-container
          // image: boboacr.azurecr.io/nodejsapp:v1
           image: ooghenekaro/nodejswebapp:latest
           ports:
