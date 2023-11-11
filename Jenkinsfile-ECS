@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        AWS_ACCESS_KEY_ID = credentials('sylviewn_AWS_ACCESS_KEY_ID')
+        AWS_ACCESS_KEY_ID = credentials('sylviewn_AWS_ACCESS_ID')
         AWS_SECRET_ACCESS_KEY = credentials('sylviewn_AWS_SECRET_ACCESS_KEY')
-        AWS_DEFAULT_REGION = "eu-west-2"
+        AWS_DEFAULT_REGION = "us-east-1"
     }
     stages {
         stage('Checkout') {
             steps {
-           git branch: 'main', url: 'https://github.com/ooghenekaro/nodejs-webapp.git'
+           git branch: 'main', url: 'https://github.com/sylviewn/nodejs-webapp.git'
   
             }
         }
