@@ -20,7 +20,7 @@ resource "aws_ecs_task_definition" "my_task_definition" {
 [
   {
     "name": "my-container",
-    "image": "sylviewette/amazon:2",  
+    "image": "sylviewette/apache:latest",  
     "portMappings": [
       {
         "containerPort": 80,
