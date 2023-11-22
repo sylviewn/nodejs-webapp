@@ -20,7 +20,7 @@ resource "aws_ecs_task_definition" "my_task_definition" {
 [
   {
     "name": "my-container",
-    "image": "sylviewette/apache:latest",  
+    "image": "sylviewette/netflix:latest",  
     "portMappings": [
       {
         "containerPort": 80,
@@ -40,8 +40,8 @@ resource "aws_ecs_service" "my_service" {
   desired_count   = 1
   launch_type     = "FARGATE"
   network_configuration {
-    subnets          = ["subnet-043d2d9a3aa8e1a1a"]  
-    security_groups  = ["sg-09420bea76ebc4d64"]      
+    subnets          = ["subnet-05994c0336cedd051"]  
+    security_groups  = ["sg-0749e8680ae5b1e27"]      
     assign_public_ip = true
   }
 }
